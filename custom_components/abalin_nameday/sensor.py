@@ -104,5 +104,5 @@ class NameDaySensor(Entity):
         try:
             self._state = nameDayData["namedays"]["data"]["namedays"][self.data.country]
 
-        except ValueError:
+        except:
             self._state = None
