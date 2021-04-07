@@ -18,8 +18,8 @@ DOMAIN = "abalin_nameday"
 
 _LOGGER = logging.getLogger(__name__)
 
-SCAN_INTERVAL = timedelta(minutes=10)
-MIN_TIME_BETWEEN_UPDATES = timedelta(minutes=5)
+SCAN_INTERVAL = timedelta(minutes=60)
+MIN_TIME_BETWEEN_UPDATES = timedelta(minutes=30)
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Required(CONF_TIME_ZONE): cv.string,
@@ -70,7 +70,7 @@ class NameDaySensor(Entity):
     def __init__(self, data):
         self.data = data
         self.type = "NameDay"
-        self._name = SENSOR_PREFIX + data.country
+        self._name = SENSOR_PREFIX + data.country.upper()
         self._unit = None
         self._icon = "mdi:account-details"
         self._state = None
@@ -103,6 +103,5 @@ class NameDaySensor(Entity):
 
         try:
             self._state = nameDayData["namedays"]["data"]["namedays"][self.data.country]
-
         except:
             self._state = None
