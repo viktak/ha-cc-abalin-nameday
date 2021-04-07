@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/github/license/viktak/ha-cc-abalin-nameday) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/viktak/ha-cc-abalin-nameday)
+![Home_Assistant](https://img.shields.io/badge/Home-Assistant-blue) ![GitHub](https://img.shields.io/github/license/viktak/ha-cc-abalin-nameday) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/viktak/ha-cc-abalin-nameday)
 
 # ha-cc-abalin-nameday
 Home Assistant custom component for the abalin name day API
