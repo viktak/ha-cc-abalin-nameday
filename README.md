@@ -59,6 +59,10 @@ sensor:
 Currently, the following sensor is created by this integration:
 - sensor.nameday_< country_code > i.e. `sensor.nameday_hu`
 
+## Sample screenshot of sensors
+![Screenshot comes here]()
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
