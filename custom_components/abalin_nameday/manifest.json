@@ -6,6 +6,7 @@
     "dependencies": [],
     "codeowners": ["@viktak"],
     "requirements": ["abalin_nameday==0.0.1"],
-    "version": "0.0.1"
+    "version": "0.0.1",
+    "iot_class": "cloud_polling"
   }
   
