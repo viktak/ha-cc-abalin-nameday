@@ -60,7 +60,8 @@ Currently, the following sensor is created by this integration:
 - sensor.nameday_< country_code > i.e. `sensor.nameday_hu`
 
 ## Sample screenshot of sensors
-![Screenshot comes here]()
+
+![screenshot](https://raw.githubusercontent.com/viktak/ha-cc-abalin-nameday/main/images/abalin-nameday-sample-screenshot.png)
 
 
 ## Contributing
