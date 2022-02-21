@@ -99,9 +99,9 @@ class NameDaySensor(Entity):
 
         nameDayData = self.data.data
 
-        _LOGGER.debug("MY_DATA = %s", nameDayData)
+        # _LOGGER.debug("MY_DATA = %s", nameDayData)
 
         try:
-            self._state = nameDayData["namedays"]["data"]["namedays"][self.data.country]
+            self._state = nameDayData["namedays"]["nameday"][self.data.country]
         except:
             self._state = None
