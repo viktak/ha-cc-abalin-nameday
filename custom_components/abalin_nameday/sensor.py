@@ -54,7 +54,7 @@ class NameDayData(object):
         self.timezone = timezone
         self.data = None
 
-    #@Throttle(MIN_TIME_BETWEEN_UPDATES)
+    @Throttle(MIN_TIME_BETWEEN_UPDATES)
     def update(self, sensorType):
         _LOGGER.debug("Updating NameDay sensor")
         myNameDay = abalin_nameday.namedayRequestor(self.country, self.timezone)
@@ -98,8 +98,6 @@ class NameDaySensor(Entity):
         self.data.update(self.type)
 
         nameDayData = self.data.data
-
-        # _LOGGER.debug("MY_DATA = %s", nameDayData)
 
         try:
             self._state = nameDayData["namedays"]["nameday"][self.data.country]
